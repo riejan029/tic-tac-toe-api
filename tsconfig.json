@@ -10,5 +10,11 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "include": ["./api/*.ts", "./*.js", "src/**/*.ts", "test/**/*.ts"]
+  "include": [
+    "./models/*ts",
+    "./api/*.ts",
+    "./*.js",
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ]
 }
