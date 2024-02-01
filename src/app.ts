@@ -6,10 +6,12 @@ import cors from "cors";
 import * as middlewares from "./middlewares";
 import api from "./api";
 import MessageResponse from "./interfaces/MessageResponse";
-
+import { connectDB } from "./middlewares";
 require("dotenv").config();
 
 const app = express();
+
+connectDB();
 
 app.use(morgan("dev"));
 app.use(helmet());
